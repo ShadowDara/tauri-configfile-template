@@ -18,12 +18,22 @@ npm run tauri dev
 
 of course you can you another package manager!
 
+### Important
+
 Then the Tauri App will start and create a new settings file in
 *(path on windows)*
 
 ```
 %appdata%\tauri-test-app\
 ```
+
+**Change the path to the name of your app!!!**
+
+```
+.join("tauri-test-app");
+```
+
+*(line 79 in `settings.rs`*)
 
 The Structure for the settings file is located in
 
